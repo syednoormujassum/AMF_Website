@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Aklima Munaf Shaikh, PT | Physiotherapist{% endblock %}</title>
+    <meta
+      name="description"
+      content="Physiotherapy clinic of Aklima Munaf Shaikh, PT – experienced physiotherapist with 4 years of clinical expertise helping you move better, live pain‑free, and regain confidence in your body."
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <div class="logo">
+          <span class="logo-mark">NKPS</span>
+          <div class="logo-text">
+            <span class="logo-title">NeuroKids Physio Studio</span>
+            <span class="logo-subtitle">Aklima Munaf Shaikh, PT</span>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact" class="btn btn-primary btn-small">Book Session</a>
+        </nav>
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Aklima Munaf Shaikh, PT</h3>
+          <p>Neuro & Pediatric Physiotherapist</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:aklima.shaikh103@gmail.com">aklima.shaikh103@gmail.com</a></p>
+        </div>
+        <div>
+          <h4>Clinic Hours</h4>
+          <p>Mon – Thu: 11:00 AM – 2:00 PM & 5:00 PM – 8:00 PM (EST)</p>
+          <p>Fri: 5:00 PM – 9:00 PM (EST)</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© {{ year }} NeuroKids Physio Studio. All rights reserved.</span>
+      </div>
+    </footer>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </body>
+</html>
